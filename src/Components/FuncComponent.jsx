@@ -2,7 +2,6 @@
 
 const FuncComponent = ({text, salario}) => {
 
-    console.log(text, salario)
     return(
         <>
             <h1>Componente de {text}</h1>

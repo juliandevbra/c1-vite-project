@@ -9,6 +9,7 @@ function App() {
       <ClassComponent/>
       <FuncComponent text={'Función n° 1'} salario={150000} />
       <FuncComponent text={'Función n° 2'} salario={300000} />
+      
     </>
   )
 }
