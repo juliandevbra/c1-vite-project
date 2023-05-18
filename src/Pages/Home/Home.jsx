@@ -1,6 +1,7 @@
 import React from 'react'
-import imgpizza from '../assets/pizza_de_mozzarella.jpg'
-import Card from './Card'
+import imgpizza from '../../assets/pizza_de_mozzarella.jpg'
+import Card from '../../Components/Card'
+import { styled } from 'styled-components'
 
 const Home = () => {
 
@@ -13,11 +14,17 @@ const Home = () => {
     ]
 
   return (
-    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+    <Container>
         <h1>Lista de pizzas</h1>
         {pizzas.map(pizza => <Card key={pizza.id} item={pizza}/>)}
-    </div>
+    </Container>
   )
 }
 
 export default Home
+
+const Container = styled.div`
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+`

@@ -5,21 +5,7 @@
   text-align: center;
 }
 
-.card{
-  width: 300px;
-  border: 3px solid beige;
-  border-radius: 10px;
-  background-color: grey;
-  margin-bottom: 10px;
-}
 
-.card-img{
-  margin-top: 10px;
-  width: 250px;
-  height: 250px;
-  border-radius: 10px;
-  object-fit: cover;
-}
 
 .read-the-docs {
   color: #888;
