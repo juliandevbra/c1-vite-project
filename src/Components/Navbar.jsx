@@ -3,7 +3,8 @@ import { navbarStyles } from './NavbarStyles'
 
 const Navbar = () => {
     let titulos = ['Home', 'Contacto', 'About', 'Pizzas']
-  return (
+    console.log('navbar')
+    return (
     <div style={navbarStyles.navbar}>
         {titulos.map((titulo, index) => (
             <div key={index} style={{color: '#fff'}}>

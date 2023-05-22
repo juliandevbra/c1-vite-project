@@ -3,7 +3,7 @@ import imgpizza from '../../assets/pizza_de_mozzarella.jpg'
 import Card from '../../Components/Card'
 import { styled } from 'styled-components'
 
-const Home = () => {
+const Home = ({cart, setCart}) => {
 
     let pizzas = [
         { id: 1, tipo: 'Muzzarella', precio: '$1200', img: imgpizza },
@@ -16,10 +16,11 @@ const Home = () => {
   return (
     <Container>
         <h1>Lista de pizzas</h1>
-        {pizzas.map(pizza => <Card key={pizza.id} item={pizza}/>)}
+        {pizzas.map(pizza => <Card cart={cart} setCart={setCart} key={pizza.id} item={pizza}/>)}
     </Container>
   )
 }
+
 
 export default Home
 
