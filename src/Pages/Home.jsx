@@ -1,6 +1,6 @@
 import React from 'react'
-import imgpizza from '../../assets/pizza_de_mozzarella.jpg'
-import Card from '../../Components/Card'
+import imgpizza from '../assets/pizza_de_mozzarella.jpg'
+import Card from '../Components/Card'
 import { styled } from 'styled-components'
 
 const Home = ({cart, setCart}) => {

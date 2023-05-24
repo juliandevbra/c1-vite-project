@@ -1,9 +1,10 @@
 import './App.css'
-import Home from './Pages/Home/Home'
+import Home from './Pages/Home'
 import Navbar from './Components/Navbar'
 import ClassComponent from './Components/ClassComponent'
 import { useState } from 'react'
-import Cart from './Pages/Home/Cart'
+import Cart from './Pages/Cart'
+import Form from './Pages/Form'
 
 
 function App() {
@@ -13,8 +14,9 @@ function App() {
   return (
     <>
       <Navbar/>
-      <Home setCart={setCart} cart={cart}/>
       <Cart cart={cart}/>
+      <Home setCart={setCart} cart={cart}/>
+      <Form/>
     </>
   )
 }
